@@ -1,0 +1,23 @@
+@media (min-width: 320px) {
+    .profile-text {
+        margin-top: 20px;
+        font-size: large;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-text {
+        margin-top: 20px;
+        font-size: xx-large;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile-text {
+        margin-top: 20px;
+        font-size: xx-large;
+        font-weight: 700;
+    }
+}
