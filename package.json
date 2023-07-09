@@ -1,0 +1,30 @@
+{
+  "name": "graphicalpasswordsystem",
+  "version": "1.0.0",
+  "description": "Graphical Password System",
+  "main": "./server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd ./server && node app.js"
+  },
+  "engines": {
+    "node": "16.4"
+  },
+  "keywords": [
+    "Graphical Password System",
+    "Password System",
+    "Secure System"
+  ],
+  "author": "Harshal Katakiya",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^3.0.1"
+  }
+}
