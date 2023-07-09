@@ -1,17 +1,18 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const app = express();
+const cors = require('cors');
 dotenv.config({ path: './config.env' })
 require('./dbconnection');
 app.use(express.json());
 app.use(require('./routerauth'));
 const PORT = process.env.PORT;
 
-app.get('/login', (req, res) => {
+app.get('/login', cors({ origin: 'https://graphical-password-system.onrender.com/' }), (req, res) => {
     res.send(`Login`);
 });
 
-app.get('/signup', (req, res) => {
+app.get('/signup', cors({ origin: 'https://graphical-password-system.onrender.com/' }), (req, res) => {
     res.send(`SignUp`);
 });
 
