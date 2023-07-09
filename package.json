@@ -7,9 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd ./server && node app.js"
   },
-  "engines": {
-    "node": "18.16.1"
-  },
   "keywords": [
     "Graphical Password System",
     "Password System",
