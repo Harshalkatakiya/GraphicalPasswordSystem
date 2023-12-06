@@ -1,6 +1,6 @@
-import './Login.css';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
+import './Login.css';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -109,8 +109,9 @@ const Login = () => {
                         <div className="col-md-5 pass-box text-center img-box" onClick={() => handlePassword("Thirty-Six")}></div>
                     </div>
                     <div className="login-button">
-                        <button className="btn btn-primary button" type="submit" onClick={LoginUser}>Login</button>
-                        <button className="btn btn-secondary button" type="button" onClick={ClearData}>Clear</button>
+                        <button type='button' className="btn btn-secondary button" onClick={() => window.location.reload()}>Refresh</button>
+                        <button type="submit" className="btn btn-primary button" onClick={LoginUser}>Login</button>
+                        <button type="reset" className="btn btn-secondary button" onClick={ClearData}>Clear</button>
                     </div>
                     <Link className="link" to="/login">Forgot password?</Link>
                     <Link className="link" to="/signup">Don't have an account? SignUp</Link>
